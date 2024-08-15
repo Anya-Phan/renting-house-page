@@ -1,0 +1,275 @@
+/* PC */
+@media screen and (min-width: 992px) {
+    .menu-mobile-icon {
+        display: none;
+    }
+
+    .mobile-header {
+        display: none;
+    }
+
+    .hero .action {
+        display: none;
+    }
+}
+
+/* Tablet and mobile */
+@media screen and (max-width: 991.01px) {
+    .content {
+        width: calc(100% - 100px);
+    }
+
+    .nav-bar {
+        position: relative;
+    }
+
+    .nav-bar_logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+    }
+
+    .nav-bar ul {
+        display: none;
+    }
+
+    .menu-mobile-icon {
+        color: var(--primary-color);
+        width: 24px;
+    }
+
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        background-color: #0000003d;
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.6s ease;
+    }
+
+    .menu-drawer {
+        position: fixed;
+        inset: 0 60% 0 0;
+        background-color: #fff;
+        z-index: 2;
+        transform: translateX(-100%);
+        transition: 0.4s ease;
+    }
+
+    .mobile-header li a {
+        display: inline-block;
+        color: var(--primary-color);
+        margin: 20px;
+        font-size: 2.4rem;
+        font-weight: 500;
+    }
+
+    .hero .info {
+        width: 100%;
+    }
+
+    .hero-img {
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        width: 50%;
+        display: none;
+    }
+
+    .client .logos {
+        justify-content: center;
+        margin-top: 32px;
+    }
+
+    .row:has(> .client-desc) {
+        gap: 30px;
+    }
+
+    .feature .cards {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .feature .card-item {
+        width: 100%;
+    }
+
+    .bg-item {
+        width: 100%;
+    }
+
+    .feature .cards .sub-title {
+        margin: 17px 20px;
+        text-align: left;
+    }
+
+    .stats {
+        padding: 0;
+    }
+
+    .stats .row {
+        flex-direction: column;
+    }
+
+    .stats .block-img {
+        width: 100%;
+    }
+
+    .stats .block-img .photo {
+        margin-right: auto;
+    }
+
+    .stat-trend {
+        right: 412px;
+    }
+
+    .stats .info {
+        padding: 79px 0;
+        width: min(100%, 600px);
+        margin: 0 auto;
+    }
+
+    .stats .info .tiltle,
+    .stats .info .desc {
+        max-width: 100%;
+    }
+
+    .stats .distance {
+        gap: 0;
+    }
+
+    .stats .qty {
+        margin: 30px auto;
+    }
+    .subs .body img {
+        display: none;
+    }
+
+    .footer .distance {
+        flex-wrap: wrap;
+        gap: 54px;
+        justify-content: space-between;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+/* mobile*/
+@media screen and (max-width: 767px) {
+    .content {
+        width: calc(100% - 40px);
+    }
+
+    .menu-drawer {
+        inset: 0 25% 0 0;
+    }
+
+    .header-sticky .action {
+        display: none;
+    }
+
+    .hero {
+        padding-top: 50px;
+    }
+
+    .hero .title {
+        font-size: 3.6rem;
+    }
+
+    .hero .action {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .hero .action-btn {
+        margin: 30px 0 30px;
+    }
+
+    .hero .hero-detail-btn {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .client {
+        margin-top: 75px;
+    }
+
+    .guides {
+        margin-top: 75px;
+    }
+
+    .list-guide {
+        flex-wrap: wrap;
+        margin-top: 30px;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .feature {
+        margin-top: 75px;
+        padding: 60px 0;
+    }
+
+    .feature .sub-title {
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    .feature .row {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .stats .block-img .photo {
+        height: auto;
+        width: 100%;
+    }
+
+    .stat-trend {
+        position: static;
+        margin: 40px auto 0;
+    }
+
+    .subs .info {
+        margin: 0;
+    }
+
+    .subs .bg-subs {
+        margin: 0;
+        padding: 32px 20px;
+        height: auto;
+    }
+
+    .subs .info .title {
+        font-size: 2rem;
+    }
+
+    .footer {
+        padding: 0 0 40px 0;
+    }
+
+    .footer .distance {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .footer .footer-list .name-list {
+        margin-bottom: 20px;
+    }
+
+    .footer .logo {
+        margin-top: 30px;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
